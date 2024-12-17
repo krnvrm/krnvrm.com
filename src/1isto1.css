@@ -123,4 +123,12 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .photos img{
+        width: 25rem;
+        height: 25rem;
+    }
+    .photos img:hover{
+        scale: 1.5;
+        transition: 0.5s;
+    }
 }
