@@ -99,8 +99,39 @@
 .proj1 .proj1-text{
     padding-top: 1rem;
 }
-
-
+.proj2{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    align-self: center;
+    box-shadow: 5px 5px cyan;
+    cursor: pointer;
+}
+.proj2 img{
+    height: 10rem;
+    width: 19rem;
+    display: flex;
+}
+.proj2 img:hover{
+    box-shadow: -6px -6px 7px white;
+    transition: 0.2s;
+}
+.proj2 .proj2-text{
+    padding-top: 1rem;
+}
+.proj2:hover{
+    color: yellow;
+    box-shadow: 10px 10px cyan;
+    transition: 0.2s;
+}
 footer{
     padding: 1rem;
     padding-top: 0.5rem;

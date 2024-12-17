@@ -1,0 +1,116 @@
+.header{
+    width: screen;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    padding: 1rem;
+}
+.left-name{
+    display: flex;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.left-name:hover{
+    color: cyan;
+    cursor: pointer;
+}
+.right-links{
+    display: flex;
+    color: cyan;
+    font-size: 1.5rem;
+    margin-left: auto;
+    align-items: center;
+    gap: 1rem;
+}
+.right-links .projects{
+    color: white;
+}
+.right-links .projects:hover{
+    color: cyan;
+}
+.right-links div:hover{
+    color: white;
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+}
+.contents{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+}
+.quote-box{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin-top: 6rem;
+    padding: 1rem;
+    font-size: 2rem;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    box-shadow: 10px 10px cyan;
+}
+.quote-box .title{
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding-bottom: 1rem;
+}
+.quote-box .quote{
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 0rem;
+}
+.quote-box .author{
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: auto;
+    padding-right: 1rem;
+}
+button{
+    margin-top: 1.5rem;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: cyan;
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+button:hover{
+    background-color: white;
+    color: cyan;
+    scale: 1.1;
+    transition: 0.4s;
+}
+footer{
+    padding: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-top: 10rem;
+    color: black;
+    bottom: 0px;
+    text-align: center;
+}
+@media only screen and (max-width: 667px){
+    .header{
+        flex-direction: column;
+    }
+    .left-name{
+        justify-content: center;
+    }
+    .right-links{
+        margin-right: auto;
+        margin-left: auto;
+        gap: 6rem;
+    }
+    .contents{
+        width: 90%;
+    }
+}
