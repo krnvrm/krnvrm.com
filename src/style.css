@@ -3,6 +3,9 @@ html{
     color: black;
     font-family: 'Montserrat';
 }
+body{
+  background-color: yellow;
+}
 @media only screen and (max-width: 1000px){
     html{
         font-size: 14px;

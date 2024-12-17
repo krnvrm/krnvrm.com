@@ -29,14 +29,27 @@
     transition: 0.2s;
     cursor: pointer;
 }
+.right-links .oneistoone{
+    color: white;
+}
+.right-links .oneistoone:hover{
+    color: cyan;
+}
+.right-links .oneistoone{
+    color: white;
+}
+.right-links .oneistoone:hover{
+    color: cyan;
+}
 .contents{
     width: 70%;
     display: flex;
     flex-direction: column;
     justify-self: center;
 }
-.theme{
+.upperpara{
     display: flex;
+    flex-direction: column;
     background-color: black;
     width: fit-content;
     height: fit-content;
@@ -49,89 +62,37 @@
     align-self: center;
     box-shadow: 5px 5px cyan;
 }
-.theme:hover{
+.upperpara:hover{
     color: yellow;
     box-shadow: 10px 10px cyan;
     transition: 0.2s;
 }
-.profile{
+.upperpara .desc{
     display: flex;
-    flex-direction: row;
-    background-color: black;
-    margin-top: 3rem;
-    padding: 2rem;
-    box-shadow: 7px 7px cyan;
-    color: white;
+    font-size: 1rem;
 }
-.profile img{
-    height: 15rem;
-    width: 15rem;
-    border-radius: 100%;
-    display: flex;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.profile img:hover{
-    box-shadow: 6px 6px 6px white;
-    transition: 0.2s;
-}
-.intro{
-    padding-left: 2rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-    display: flex;
-}
-.profile:hover{
-    color: yellow;
-    box-shadow: 15px 15px cyan;
-    transition: 0.2s;
-}
-.socials{
-    width: fit-content;
-    background-color: black;
-    margin-top: 3rem;
+.photos{
     display: flex;
     flex-direction: column;
-    margin-left: auto;
-    color: white;
-    margin-right: auto;
-    padding: 2rem;
-    padding-top: 1rem;
-    box-shadow: 7px 7px cyan;
+    padding: 1rem;
+    margin-top: 3rem;
+    gap: 2rem;
 }
-.socials:hover{
-    color: yellow;
-    box-shadow: 15px 15px cyan;
-    transition: 0.2s;
+.photos img{
+    width: 20rem;
+    height: 20rem;
+    border: 0.2rem solid black;
 }
-.socials .socials-title{
-    color: white;
-    font-size: 2rem;
-    text-align: center;
-    font-weight: 600;
-    padding-bottom: 1rem;
+.photos img:hover{
+    box-shadow: 6px 6px 50px cyan;
+    scale: 2;
+    transition: 0.5s;
 }
-.socials .handles{
+.photos .row1, .row2, .row3, .row4{
     display: flex;
     flex-direction: row;
-    position: relative;
     justify-content: center;
-}
-.socials .twitter{
-    height: 8rem;
-    width: 8rem;
-    border-radius: 100%;
-    position: absolute;
-}
-.socials .twitter:hover{
-    opacity: 0;
-    transition: 0.2s;
-    cursor: pointer;
-}
-.socials .twitter-pfp{
-    height: 8rem;
-    width: 8rem;
-    border-radius: 100%;
+    gap: 2rem;
 }
 .footer{
     padding: 1rem;
@@ -139,6 +100,7 @@
     padding-bottom: 0.5rem;
     margin-top: 10rem;
     color: black;
+    bottom: 0px;
     text-align: center;
 }
 @media only screen and (max-width: 667px){
@@ -156,14 +118,9 @@
     .contents{
         width: 90%;
     }
-    .profile{
+    .photos .row1, .row2, .row3, .row4{
         flex-direction: column;
-    }
-    .profile img{
         margin-left: auto;
         margin-right: auto;
-    }
-    .profile .intro{
-        text-align: center;
     }
 }
