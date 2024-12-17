@@ -41,11 +41,60 @@
     flex-direction: column;
     justify-self: center;
 }
-
-
-
-
-
+.form{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 60%;
+    height: fit-content;
+    margin-top: 3rem;
+    color: white;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    align-self: center;
+    box-shadow: 5px 5px cyan;
+    gap: 1rem;
+}
+.form .title{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.form .name, .email, .message, .subject{
+    font-size: 1.5rem;
+    margin-right: auto;
+    margin-top: 0.8rem;
+    display: flex;
+}
+.form .name-box, .email-box, .subject-box{
+    height: 1.5rem;
+    width: 100%;
+    margin-left: 0.8rem;
+    
+}
+.form .message-box{
+    width: 100%;
+    margin-left: 0.8rem;
+}
+.sbt-btn{
+    margin-top: 1.5rem;
+    height: fit-content;
+    width: fit-content;
+    padding: 0.5rem;
+    background-color: cyan;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 1rem;
+}
+.sbt-btn:hover{
+    background-color: white;
+    color: cyan;
+    scale: 1.1;
+    transition: 0.4s;
+}
 .footer{
     padding: 1rem;
     padding-top: 0.5rem;
