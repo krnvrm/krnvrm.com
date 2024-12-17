@@ -3,6 +3,21 @@ html{
     color: black;
     font-family: 'Montserrat';
 }
+@media only screen and (max-width: 1000px){
+    html{
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 667px){
+    html{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 395px){
+    html{
+        font-size: 8px;
+    }
+}
 @font-face {
     font-family: 'Montserrat';
     src: url('../fonts/Montserrat-Black.ttf') format('truetype');
