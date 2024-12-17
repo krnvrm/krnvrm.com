@@ -156,4 +156,7 @@ footer{
     .contents{
         width: 90%;
     }
+    .proj{
+        flex-direction: column;
+    }
 }
