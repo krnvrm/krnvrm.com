@@ -8,15 +8,35 @@
     <link rel="icon" href="./assets/favicon.png" type="image/png">
     <link rel="stylesheet" href="./src/style.css">
     <link rel="stylesheet" href="./src/index.css">
+    <script>
+        function krnvrm(){
+            window.open("www.krnvrm.com","_self")
+        }
+        function projclick(){
+            window.open("./build/projects.html","_self")
+        }
+        function click11(){
+            window.open("./build/1isto1.html","_self")
+        }
+        function blogclick(){
+            window.open("./build/blog.html","_self")
+        }
+        function contactclick(){
+            window.open("./build/contactus.html","_self")
+        }
+        function twitter(){
+            window.open("https://x.com/krnvrm05")
+        }
+    </script>
 </head>
 <body>
         <div class="header">
-            <div class="left-name">KARAN VERMA</div>
+            <div class="left-name" onclick=krnvrm()>KARAN VERMA</div>
             <div class="right-links">
-                <div>Projects</div>
-                <div>1:1</div>
-                <div>Blog</div>
-                <div>Contact Us</div>
+                <div onclick=projclick()>Projects</div>
+                <div onclick=click11()>1:1</div>
+                <div onclick=blogclick()>Blog</div>
+                <div onclick=contactclick()>Contact Us</div>
             </div>
         </div>
         <div class="contents">
@@ -31,10 +51,13 @@
             <div class="socials">
                 <div class="socials-title">My Socials!</div>
                 <div class="handles">
-                    <img src="./assets/twitter.png" alt="" class="twitter">
-                    <img src="./assets/twitter_pfp.png" alt="" class="twitter-pfp">
+                    <img src="./assets/twitter.png" alt="" class="twitter" onclick=twitter()>
+                    <img src="./assets/twitter_pfp.png" alt="" class="twitter-pfp" onclick=twitter()>
                 </div>
             </div>
+        </div>
+        <div class="footer">
+            <div>krnvrm © | 2024</div>
         </div>
 </body>
 </html>

@@ -16,6 +16,7 @@ body{
 }
 .left-name:hover{
     color: cyan;
+    cursor: pointer;
 }
 .right-links{
     display: flex;
@@ -29,6 +30,7 @@ body{
     color: white;
     transform: scale(1.1);
     transition: 0.2s;
+    cursor: pointer;
 }
 .contents{
     width: 70%;
@@ -122,22 +124,27 @@ body{
     height: 8rem;
     width: 8rem;
     border-radius: 100%;
-    z-index: 1;
     position: absolute;
 }
 .socials .twitter:hover{
     opacity: 0;
     transition: 0.2s;
+    cursor: pointer;
 }
 .socials .twitter-pfp{
     height: 8rem;
     width: 8rem;
     border-radius: 100%;
-    z-index: 0;
 }
-.socials .twitter-pfp:hover{
-    box-shadow: 6px 6px 6px white;
-    transition: 0.2s;
+.footer{
+    width: fit-content;
+    background-color: black;
+    padding: 1rem;
+    margin-top: 3rem;
+    color: cyan;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 @media only screen and (max-width: 667px){
     .header{
